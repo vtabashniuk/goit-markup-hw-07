@@ -13,7 +13,7 @@
 /* icons-logo-primary-color:                #afb1b8; */
 /* contacts color:                          rgba(255, 255, 255, 0.6); */
 
-:root {
+/* :root {
   --main-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
@@ -23,9 +23,9 @@
   --icons-logo-primary-color: #afb1b8;
   --contacts-color: rgba(255, 255, 255, 0.6);
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -34,17 +34,17 @@ body {
   letter-spacing: 0.03em;
   background-color: #ffffff;
   color: var(--main-text-color);
-}
+} */
 
 /* ======= UTILITE CLASSES ======= */
-*,
+/* *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-}
+} */
 
-img {
+/* img {
   display: block;
 }
 
@@ -63,9 +63,9 @@ img {
   line-height: 1.167;
   text-align: center;
   color: var(--secondary-text-color);
-}
+} */
 
-.modal-button {
+/* .modal-button {
   height: 50px;
   background-color: var(--accent-color);
   color: var(--white);
@@ -78,9 +78,9 @@ img {
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -89,7 +89,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 /* ======= END UTILITE CLASSES ======= */
 
 /* ----------------------------------- */

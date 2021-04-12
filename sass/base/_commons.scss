@@ -1,0 +1,35 @@
+img {
+    display: block;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+
+  .modal-button {
+    height: 50px;
+    background-color: $accent-color;
+    color: $white;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+  }

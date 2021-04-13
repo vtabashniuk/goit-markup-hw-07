@@ -96,7 +96,7 @@
 /* ~             STUDIO              ~ */
 /* ----------------------------------- */
 /* ======= HEADER ======= */
-header {
+/* header {
   position: relative;
 }
 
@@ -109,31 +109,31 @@ header::after {
   height: 1px;
   z-index: -1;
   background-color: #ececec;
-}
+} */
 
-.header-container {
+/* .header-container {
   display: flex;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.nav-container {
+/* .nav-container {
   display: flex;
   align-items: center;
-}
+} */
 
-.site-navigation {
+/* .site-navigation {
   display: flex;
 }
 
 .contacts {
   display: flex;
-}
+} */
 /* === LOGO ===*/
-.logo.link {
+/* .logo.link {
   display: block;
   margin-right: 92px;
   padding: 24px 0 25px 0;
@@ -146,7 +146,7 @@ header::after {
 
 .logo-second-part {
   color: var(--black);
-}
+} */
 
 /* === NAVIGATION & CONTACTS === */
 .site-navigation > .items:not(:last-child) {

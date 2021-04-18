@@ -28,6 +28,13 @@ img {
   list-style: none;
 }
 
+.site-navigation .link,
+.contacts .link {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -78,6 +85,81 @@ img {
           align-items: center;
 }
 
+.site-navigation,
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-navigation .items:not(:last-child),
+.contacts .items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-navigation .link,
+.contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-navigation .link:hover, .site-navigation .link:focus, .site-navigation .link:active,
+.contacts .link:hover,
+.contacts .link:focus,
+.contacts .link:active {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.site-navigation .link.active,
+.contacts .link.active {
+  color: #2196f3;
+}
+
+.site-navigation .link.active::after,
+.contacts .link.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.site-navigation .link {
+  position: relative;
+  display: block;
+  color: #212121;
+}
+
+.contacts .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #757575;
+  fill: #757575;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+}
+
+.contacts .link .icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .logo {
   display: block;
   margin-right: 92px;
@@ -91,12 +173,5 @@ img {
 
 .logo-second-part {
   color: #000000;
-}
-
-.site-navigation,
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

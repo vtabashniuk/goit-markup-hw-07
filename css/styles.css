@@ -149,15 +149,15 @@ header::after {
 } */
 
 /* === NAVIGATION & CONTACTS === */
-.site-navigation > .items:not(:last-child) {
+/* .site-navigation > .items:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts > .items:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
-.site-navigation .link {
+/* .site-navigation .link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -178,9 +178,9 @@ header::after {
   color: var(--main-text-color);
   fill: var(--main-text-color);
   transition: color 250ms var(--time-function), fill 250ms var(--time-function);
-}
+} */
 
-.site-navigation .link:hover,
+/* .site-navigation .link:hover,
 .contacts .link:hover,
 .site-navigation .link:focus,
 .contacts .link:focus,
@@ -203,13 +203,13 @@ header::after {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
+} */
 
-.contacts .icons {
+/* .contacts .icons {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
+} */
 
 /* ======= END HEADER ======= */
 

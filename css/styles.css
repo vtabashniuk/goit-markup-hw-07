@@ -315,7 +315,7 @@ header::after {
 } */
 
 /* ======= OUR JOB ======= */
-.job-section {
+/* .job-section {
   padding-bottom: 94px;
 }
 
@@ -323,13 +323,13 @@ header::after {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
+} */
 
-.job-container .title {
+/* .job-container .title {
   margin-bottom: 50px;
-}
+} */
 
-.job-list {
+/* .job-list {
   display: flex;
 }
 
@@ -353,7 +353,7 @@ header::after {
   text-transform: uppercase;
   color: var(--white);
   background-color: rgba(47, 48, 58, 0.8);
-}
+} */
 /* ======= OUR TEAM ======= */
 .team-section {
   padding: 94px 0;

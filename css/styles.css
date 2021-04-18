@@ -215,7 +215,7 @@ header::after {
 
 /* ======= MAIN ======= */
 /* ======= HERO ======= */
-.hero-section {
+/* .hero-section {
   margin: 0 auto;
   max-width: 1600px;
   height: 600px;
@@ -225,16 +225,16 @@ header::after {
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/studio/hero/hero-background.jpg");
-}
+} */
 
-.hero-container {
+/* .hero-container {
   width: 630px;
   height: 100%;
   margin: 0 auto;
   padding: 200px 0;
-}
+} */
 
-.hero-container .title {
+/* .hero-container .title {
   margin: 0 auto 22px auto;
   font-weight: 900;
   font-size: 44px;
@@ -242,15 +242,15 @@ header::after {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
-}
+} */
 
-.hero-container > .modal-button {
+/* .hero-container > .modal-button {
   display: block;
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
-}
+} */
 
 /* ======= OUR ADVANTAGES ======= */
 .advantages-section {

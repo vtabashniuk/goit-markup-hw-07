@@ -46,6 +46,36 @@ img {
   overflow: hidden;
 }
 
+.logo {
+  display: block;
+  margin-right: 92px;
+  padding: 24px 0 25px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: #2196f3;
+}
+
+.logo-second-part {
+  color: #000000;
+}
+
+.modal-button, .hero-container .modal-button {
+  height: 50px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+
 .header {
   position: relative;
 }
@@ -160,18 +190,37 @@ img {
   margin-right: 10px;
 }
 
-.logo {
-  display: block;
-  margin-right: 92px;
-  padding: 24px 0 25px 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  color: #2196f3;
+.hero-section {
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+  background-color: #c4c4c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/studio/hero/hero-background.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/studio/hero/hero-background.jpg");
 }
 
-.logo-second-part {
-  color: #000000;
+.hero-container {
+  width: 630px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+.hero-container .title {
+  margin: 0 auto 22px auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-container .modal-button {
+  display: block;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px 32px;
 }
 /*# sourceMappingURL=main.css.map */

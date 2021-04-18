@@ -436,7 +436,7 @@ header::after {
 } */
 
 /* ======= PERMANENT CLIENTS =======*/
-.clients-section {
+/* .clients-section {
   padding: 94px 0;
 }
 
@@ -449,9 +449,9 @@ header::after {
 .clients {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.clients .link {
+/* .clients .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,19 +462,19 @@ header::after {
   border-radius: 4px;
   transition: border-color 250ms var(--time-function),
     fill 250ms var(--time-function);
-}
+} */
 
-.clients .icons {
+/* .clients .icons {
   width: 88px;
   height: 52px;
-}
+} */
 
-.clients .link:hover,
+/* .clients .link:hover,
 .clients .link:focus {
   outline: none;
   border-color: var(--accent-color);
   fill: var(--accent-color);
-}
+} */
 
 /* ======= END MAIN ======= */
 

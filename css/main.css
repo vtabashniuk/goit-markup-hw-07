@@ -28,6 +28,16 @@ img {
   list-style: none;
 }
 
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .site-navigation .link,
 .contacts .link {
   font-weight: 500;
@@ -59,6 +69,15 @@ img {
 
 .logo-second-part {
   color: #000000;
+}
+
+.advantages-list .title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: #212121;
 }
 
 .modal-button, .hero-container .modal-button {
@@ -222,5 +241,50 @@ img {
   min-width: 200px;
   margin: 0 auto;
   padding: 10px 32px;
+}
+
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-list .items::before {
+  display: block;
+  content: "";
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-list .items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-list .antenna::before {
+  background-image: url("../img/studio/our-advantages/antenna.svg");
+}
+
+.advantages-list .clock::before {
+  background-image: url("../img/studio/our-advantages/clock.svg");
+}
+
+.advantages-list .diagram::before {
+  background-image: url("../img/studio/our-advantages/diagram.svg");
+}
+
+.advantages-list .astronaut::before {
+  background-image: url("../img/studio/our-advantages/astronaut.svg");
+}
+
+.advantages-list .title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: unset;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

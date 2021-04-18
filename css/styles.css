@@ -253,7 +253,7 @@ header::after {
 } */
 
 /* ======= OUR ADVANTAGES ======= */
-.advantages-section {
+/* .advantages-section {
   padding: 94px 0;
 }
 
@@ -265,9 +265,9 @@ header::after {
 
 .advantages-list {
   display: flex;
-}
+} */
 
-.advantages-list > .items {
+/* .advantages-list > .items {
   width: 270px;
 }
 
@@ -283,9 +283,9 @@ header::after {
 
 .advantages-list > .items:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
-.antenna::before {
+/* .antenna::before {
   background-image: url("../img/studio/our-advantages/antenna.svg");
 }
 
@@ -299,9 +299,9 @@ header::after {
 
 .astronaut::before {
   background-image: url("../img/studio/our-advantages/astronaut.svg");
-}
+} */
 
-.advantages-list .title {
+/* .advantages-list .title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.143;
@@ -312,7 +312,7 @@ header::after {
 
 .advantages-list .items > p {
   height: 75px;
-}
+} */
 
 /* ======= OUR JOB ======= */
 .job-section {

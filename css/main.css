@@ -71,7 +71,7 @@ img {
   color: #000000;
 }
 
-.advantages-list .title, .job.title {
+.advantages-list .title, .job.title, .team.title, .members-content .title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -93,6 +93,50 @@ img {
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+}
+
+.social-nets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 32px;
+}
+
+.social-nets .items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-nets .icons {
+  width: 20px;
+  height: 20px;
+}
+
+.social-nets .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  fill: #afb1b8;
+  border-radius: 50%;
+  -webkit-transition-property: background-color, fill;
+  transition-property: background-color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-nets .link:hover, .social-nets .link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
 }
 
 .header {
@@ -296,10 +340,6 @@ img {
   padding: 0 0 94px 0;
 }
 
-.job.title {
-  margin-bottom: 50px;
-}
-
 .job-label {
   position: absolute;
   bottom: 0;
@@ -327,5 +367,46 @@ img {
 
 .job-list .items:not(:last-child) {
   margin-right: 30px;
+}
+
+.team.section {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-list .members {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list .members:not(:last-child) {
+  margin-right: 30px;
+}
+
+.members-content {
+  padding: 30px 0;
+}
+
+.members-content .title {
+  margin: 0 auto 10px auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+}
+
+.members-content p {
+  margin: 0 auto 16px auto;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

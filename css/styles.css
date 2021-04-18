@@ -355,7 +355,7 @@ header::after {
   background-color: rgba(47, 48, 58, 0.8);
 } */
 /* ======= OUR TEAM ======= */
-.team-section {
+/* .team-section {
   padding: 94px 0;
   background-color: var(--secondary-background-color);
 }
@@ -382,9 +382,9 @@ header::after {
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.members-content {
+/* .members-content {
   padding: 30px 0;
 }
 
@@ -393,16 +393,16 @@ header::after {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
-}
+} */
 
-.members-content > p {
+/* .members-content > p {
   margin: 0 auto 16px auto;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
-}
+} */
 
-.social-nets {
+/* .social-nets {
   display: flex;
   margin: 0 32px;
 }
@@ -433,7 +433,7 @@ header::after {
 .social-nets .link:focus {
   background-color: var(--accent-color);
   fill: var(--white);
-}
+} */
 
 /* ======= PERMANENT CLIENTS =======*/
 .clients-section {

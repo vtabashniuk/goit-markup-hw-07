@@ -28,7 +28,7 @@
   }
 
   & .modal-button {
-    @extend .modal-button;
+    @extend %modal-button;
     display: block;
     min-width: 200px;
     margin: 0 auto;

@@ -86,7 +86,7 @@ img {
   color: #212121;
 }
 
-.modal-button, .hero-container .modal-button {
+.hero-container .modal-button, .subscribe-form .submit-button, .modal .submit-button {
   height: 50px;
   background-color: #2196f3;
   color: #ffffff;
@@ -145,6 +145,73 @@ img {
 .social-nets .link:hover, .social-nets .link:focus {
   background-color: #2196f3;
   fill: #ffffff;
+}
+
+.subscribe-form .input, .input-wrapper .input {
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-form .input:focus, .input-wrapper .input:focus, .subscribe-form .input:active, .input-wrapper .input:active {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover, .close-button:focus, .close-button:active {
+  fill: #2196f3;
+}
+
+.close-button .icons {
+  width: 11px;
+  height: 11px;
+}
+
+.checkbox:checked + .custom-checkbox, .checkbox:not(:checked) + .custom-checkbox {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: transparent;
+  background-image: url("../img/studio/svg/icon-uncheked.svg");
+  -webkit-transition: background-color 250ms var(--time-function);
+  transition: background-color 250ms var(--time-function);
 }
 
 .header {
@@ -541,30 +608,6 @@ img {
           justify-content: space-between;
 }
 
-.subscribe-form .input {
-  width: 358px;
-  height: 50px;
-  padding: 16px 15px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe-form .input:focus, .subscribe-form .input:active {
-  outline: none;
-  border-color: #2196f3;
-}
-
 .subscribe-form .input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -593,12 +636,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-form .icons {
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-}
-
 .subscribe-form .submit-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -611,5 +648,232 @@ img {
           justify-content: space-between;
   padding: 10px 28px;
   min-width: 200px;
+}
+
+.subscribe-form .submit-button .icons {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition-property: opacity, visibility, pointer-events;
+  transition-property: opacity, visibility, pointer-events;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition-property: opacity, visibility, pointer-events;
+  transition-property: opacity, visibility, pointer-events;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -200%);
+          transform: translate(-50%, -200%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition-property: opacity, visibility, pointer-events, -webkit-transform;
+  transition-property: opacity, visibility, pointer-events, -webkit-transform;
+  transition-property: transform, opacity, visibility, pointer-events;
+  transition-property: transform, opacity, visibility, pointer-events, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  width: 528px;
+  height: 580px;
+  padding: 40px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-transition-property: opacity, visibility, pointer-events, -webkit-transform;
+  transition-property: opacity, visibility, pointer-events, -webkit-transform;
+  transition-property: transform, opacity, visibility, pointer-events;
+  transition-property: transform, opacity, visibility, pointer-events, -webkit-transform;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal .title {
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.modal .submit-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+}
+
+.inputs-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inputs-group .text-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+.inputs-group .comment {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  color: #212121;
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputs-group .comment::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.inputs-group .comment:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.inputs-group .comment::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.inputs-group .comment::placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.inputs-group .comment:active, .inputs-group .comment:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-wrapper .icons {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrapper .input {
+  padding: 12px 12px 12px 42px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #212121;
+  background-color: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-wrapper .input:active ~ .icons,
+.input-wrapper .input:focus ~ .icons {
+  outline: none;
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
+.checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 11px 0 12px;
+  margin-bottom: 30px;
+}
+
+.checkbox:checked + .custom-checkbox {
+  background-color: #2196f3;
+  background-image: url("../img/studio/svg/icon-checked.svg");
+  background-origin: border-box;
+  border: transparent;
+}
+
+.checkbox-text-label {
+  color: #2196f3;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 /*# sourceMappingURL=main.css.map */
